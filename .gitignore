@@ -1,0 +1,20 @@
+# migrations
+**/migrations/
+**/**/migrations
+*/migrations/*
+
+
+# IDE folder
+.idea/
+
+# VS code folder
+.vscode/
+
+# virtual env
+venv/
+
+# env
+.env
+
+#pycache
+__pycache__
