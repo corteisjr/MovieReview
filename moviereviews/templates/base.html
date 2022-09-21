@@ -8,7 +8,7 @@
     <body>
         <nav class="navbar  navbar-expand-lg navbar-light bg-light mb-3">
             <div class="container">
-                <a href="#" class="navbar-brand">Movies</a>
+                <a href="{% url 'home'%}" class="navbar-brand">Movies</a>
                 <button class="navbar-toggler" 
                 type="button" 
                 data-bs-target="#navbarNavAltMarkup"
@@ -20,7 +20,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a href="#" class="nav-link">News</a>
+                        <a href="{% url 'news'%}" class="nav-link">News</a>
                         <a href="#" class="nav-link">Login</a>
                         <a href="#" class="nav-link">Sign up</a>
                     </div>
@@ -31,5 +31,11 @@
             {% block content %}
             {% endblock content%}
         </div>
+        <footer class="page-footer font-small blue fixed-bottom">
+            <div class="footer-copyright text-center py-3">
+                &copy;2022 - Todos direitos reservados:
+                <a href="#">Corteis Junior</a>
+            </div>
+        </footer> 
     </body>
 </html>
