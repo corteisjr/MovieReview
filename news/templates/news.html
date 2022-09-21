@@ -9,7 +9,8 @@
 </head>
 <body>
     <div class="container">
-        
+        {% extends 'base.html' %}
+        {% block content %}
         {% for news in newss %}
         <div class="card mb-3 ">
             <div class="row g-0 pb-4">
@@ -24,5 +25,6 @@
         </div>
         {% endfor %}
     </div>
+    {% endblock content %}
 </body>
 </html>
